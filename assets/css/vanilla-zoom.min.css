@@ -1,0 +1,388 @@
+.vanilla-zoom {
+  width: 100%;
+  /*display: flex;*/
+}
+
+.vanilla-zoom .sidebar {
+  /*flex-basis: 30%;*/
+  width: 100%;
+  display: flex;
+  /*flex-direction: column;*/
+}
+
+.vanilla-zoom .sidebar img.small-preview {
+  width: 60px;
+  margin-right: 5px;
+  cursor: pointer;
+  opacity: .5;
+}
+
+.vanilla-zoom .sidebar img.small-preview.active, .vanilla-zoom .sidebar img.small-preview:hover {
+  opacity: 1;
+}
+
+.vanilla-zoom .sidebar img.small-preview:last-child {
+  margin-right: 0;
+}
+
+.vanilla-zoom .zoomed-image {
+  width: 100%;
+  height: 300px;
+  flex: 1;
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: contain;
+  margin-bottom: 5px;
+}
+.tamana{
+  color:green;
+}
+.tamana1{
+  color:red;
+}
+.tamana2{
+  color:#cdb247;
+}
+
+.zoom {
+  font-size: 50px;
+  color: #222;
+  font-family:serif;}
+
+.om {
+  font-size: 60px;
+  color: #fff;
+  font-family: 'poppins',sans-serif,serif;
+  position: relative;
+-webkit-text-stroke: 0.3vw #383d52;
+
+  /*
+  margin: 0;
+  padding: 0;
+  top: 47%;
+  left: 25%;*/
+}
+ 
+ .om::before{
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  color: #01fe87;
+  -webkit-text-stroke: 0vw #383d52;
+  border-right: 2px solid #01fe87;
+  overflow: hidden;
+  animation: an 6s linear infinite;
+ }
+
+@keyframes an {
+
+0%{
+  width: 0;
+}
+
+70%,{
+  width: 100%;
+}
+
+}
+
+
+.zoo {
+
+  font-size: 20px;
+  color: black;
+  font-family: serif;}
+
+@keyframes mon_anim{
+  0%{
+    transform: translateY(10vh);
+    opacity: 0;
+  },
+  100%{transform: translateY(0px);
+    opacity: 1;}
+
+}
+
+
+.text {
+  font-family: serif;
+  color: black;
+  
+}
+.ttm {
+  text-decoration: none;
+  
+  
+}
+
+/*.ttm {
+  text-decoration: none;
+  color: black;
+  border: 2px solid #fff;
+  padding: 3px 30px;
+  transition: 1s all ease;
+}
+.ttm::before{
+  background: #45a29e;
+  content: 'hello';
+  position: absolute;
+  top: -50%;
+  left: 500%;
+  transform: translate(-50%, 50%);
+  z-index: -1;
+  transition: all 0.6s ease;
+  width: 0%;
+  left: 100%;
+}
+
+.ttm:hover::before{
+ width: 100%;
+
+}
+.ttm::after{
+  content: "";
+  
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background: #000;
+}
+*/
+.text1 {
+  font-family: serif;
+  color: black;
+  font-size:40px;
+  animation-name: mon_anim;
+  animation-duration: 5000ms;
+  animation-delay: 500ms;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: 1;
+}
+.text2 {
+  font-family: serif;
+  color: black;
+  font-size:40px;
+  animation-name: mon_anim;
+  animation-duration: 7000ms;
+  animation-delay: 700ms;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: 1;
+}
+#flip {
+  text-align: center;
+  height: 100px;
+  overflow:hidden ;
+  
+/*}
+#flip {
+  height: 100px;
+padding: 1px 4px;
+margin-bottom: 20px;
+display:inline-block ;}
+
+/*#flip div:first-child{
+animation: show 3s linear infinite;*/
+
+}
+#flip div:first-child div{
+  background: green;
+
+}
+#flip div div {
+background:RED ;
+
+
+
+}
+#flip div:last-child div{
+  background: #cdb247;
+}
+/*
+@keyframes show{
+  0%{ margin-top: -270px; }
+  5%{ margin-top: -180px; }
+  33%{ margin-top: -180px; }
+  38%{ margin-top: -90px; }
+  66%{ margin-top: -90px; }
+  71%{ margin-top: -0px; }
+  99%{ margin-top: -0px; }
+  100%{ margin-top: -270px; }  
+}*/
+
+.ide{
+text-decoration: none;
+font-size: 30px;
+font-family: sans-serif;
+text-decoration: none;
+color: #green;
+position: relative;
+
+
+
+}
+.ide::before{
+  content: "";
+  position: absolute;
+  background: #222;
+  width: 100%;
+  height: 4px;
+  bottom: 0;
+  transform-origin: 100% 0;
+  transform: scaleX(0);
+  transition: transform 0.8s;
+
+
+}
+.ide:hover::before{
+  transform-origin: 0 0;
+  transform: scaleX(1);
+}
+
+.PUL{
+  
+  border: 0px solid;
+  background: #FFF;
+  margin: 50px auto 0;
+  box-shadow: 0 0 0 0 #000;
+  animation: pulse 2s infinite;
+ text-align: center;
+}
+@keyframes pulse{
+  to{
+    box-shadow: 0 0 0 20px rgba(0, 0, 0, 0.0001);
+  }
+}
+
+.total{
+  letter-spacing: 8px;
+animation: ota 5s linear infinite;
+}
+@keyframes ota{
+  0%{color: green; 
+    letter-spacing: 7px;}
+  16%{color: green; 
+    letter-spacing: 6px;}
+  32%{color: red; 
+    letter-spacing: 5px;}
+  48%{color: red; l
+    etter-spacing: 4px;}
+  64%{color: #cdb247; 
+    letter-spacing: 5px;}
+80%{color: #cdb247; 
+  letter-spacing: 6px;}
+100%{color: #000; 
+  letter-spacing: 7px;}}
+
+
+.espace{
+  animation: otaku 2s linear infinite;}
+@keyframes otaku{
+  0%{letter-spacing: 1px;}
+  16%{letter-spacing: 20px;}
+  32%{letter-spacing: 30px;}
+  48%{letter-spacing: 10px;}
+  64%{letter-spacing: 30px;}
+80%{letter-spacing: 20px;}
+100%{letter-spacing: 1px;}}
+
+.espac{
+  animation: otaki 3s linear infinite;}
+@keyframes otaki{
+  0%{letter-spacing: 1px;}
+  16%{letter-spacing: 3px;}
+  32%{letter-spacing: 4px;}
+  48%{letter-spacing: 5px;}
+  64%{letter-spacing: 4px;}
+80%{letter-spacing: 3px;}
+100%{letter-spacing: 1px;}}
+
+.ecriture{
+  animation: otako 10s linear infinite;}
+@keyframes otako{
+  0%{font-family: sans-serif;}
+  16%{font-family: serif;}
+  32%{font-family: cursive;}
+  48%{font-family: monospace;}
+  64%{font-family: fantasy;}
+80%{font-family: inherit;}
+100%{font-family: unset;}}
+
+.cool{
+  animation: otak 3s linear infinite;}
+@keyframes otak{
+  0%{color: red;}
+  16%{color: purple;}
+  32%{color: fuchsia;}
+  48%{color: #00ff00;}
+  64%{color: green;}
+80%{color: navy;}
+100%{color: blue;}}
+
+.couleur{animation: ota 9s linear infinite;}
+@keyframes ota{
+  0%{color: maroon;}
+  8%{color: red;}
+  16%{color: orange;}
+  24%{color: yellow;}
+  32%{color: olive;}
+  40%{color: purple;}
+48%{color: fuchsia;}
+56%{color: #00ff00;}
+  64%{color: green;}
+  72%{color: navy;}
+  80%{color: blue;}
+  85%{color: aqua;}
+  89%{color: teal;}
+91%{color: #000;}
+98%{color: silver;}
+100%{color: gray;}}
+
+.MenuBarItem{
+  list-style: none;
+}
+.MenuBarItem li a:link, .MenuBarItem li a:visited{
+
+  display: block;
+  color: #ffffff;
+  text-align: center;
+  text-decoration: none;
+}
+.MenuBarItem li a:hover {background-color: #199bd2;}
+.MenuBarItem li a:active {background-color: #808080;}
+.MenuBarItem .sousmenu{
+
+list-style-type: none;
+display: none;
+padding: 0;
+margin: 0;
+position: absolute;
+
+
+}
+.MenuBarItem .sousmenu li{
+  float: none;
+  margin: 0;
+  padding: 0;
+  border-top: 1px solid transparent;
+  border-right: 1px solid transparent;
+
+}
+.MenuBarItem .sousmenu li a:link, .MenuBarItem li a:visited{
+  display: block;
+  color: #ffffff;
+  text-decoration: none ;
+  background-color: #808080;
+
+}
+.MenuBarItem .sousmenu li a:hover{
+  background-color: #199bd2;
+
+
+
+}
+.MenuBarItem li:hover .sousmenu{
+  display: block;
+}
