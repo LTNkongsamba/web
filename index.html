@@ -838,22 +838,23 @@ font-family: cursive
 </div></div></div><div class="gdlr-core-pbf-element"><div class="gdlr-core-contact-form-7-item gdlr-core-item-pdlr gdlr-core-item-pdb "><div role="form" class="wpcf7" id="wpcf7-f1979-p1977-o1" lang="fr-FR" dir="ltr">
 <div class="screen-reader-response"><p role="status" aria-live="polite" aria-atomic="true"></p> <ul></ul></div>
 
-<form action="mailto:moriantex2.0@gmail.com" method="POST">
+<form action="mailto:moriantex2.0@gmail.com" method="POST" enctype="text/plain">
                     
-                    <div class="products">
-                        
+                     <div class="products">
+                       
 
 
-                        <div class="mb-3"><label class="form-label" for="name">Nom</label><input class="form-control" type="text"  autocomplete="off" id="name" name="NOM" placeholder="Nom complet*"></div>
-                    <div class="mb-3"><label class="form-label" for="email">Email</label><input class="form-control" type="email" autocomplete="off" id="email" name="EMAIL" placeholder="Adresse@mail.com*"></div>
+                        <div class="mb-3"><label class="form-label" for="name">Nom</label><input type="text" name="NOM" placeholder="Nom Complet*"  autocomplete="off" required></div>
+                    
 
-                    <div class="mb-3"><label class="form-label" for="name">Numero de telephone</label><input class="form-control" autocomplete="off" type="text" id="name" name="OBJET" placeholder="Objet*"></div>
-
-                    <div class="mb-3"><label class="form-label" for="message">Message</label><textarea class="form-control" id="message" name="MESSAGE" placeholder="Message*" ></textarea></div>
+                    <div class="mb-3"><label class="form-label" for="name">Numero de telephone</label><input type="text" name="NUMERO" placeholder="6********"  autocomplete="off" required minlength="9" maxlength="9" pattern="[0-9]+"></div>
+                     <div class="mb-3"><label class="form-label" for="email">objet</label><input type="objet" name="OBJET"  autocomplete="off"  placeholder="ajouter un objet"></div>
+                    <div class="mb-3"><label class="form-label" for="message">Message</label><textarea type="text" cols="40" rows="10" name="MESSAGE" placeholder="votre message*"  autocomplete="off" required></textarea>
+                        </div>
 
                     <div class="mb-3">
 
-                        <input type="submit" name="ok" class="btn btn-primary" ></div>
+                        <input class="wpcf7" type="submit" name="Envoyer depuis le site web ltnkongsamba" class="btn btn-primary" ></div>
                     </div>
                     
                 </form>
