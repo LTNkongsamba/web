@@ -29,7 +29,7 @@
         <div class="tamana">LYCÉE </div><div class="tamana1">TECHNIQUE DE </div><div class="tamana2">NKONGSAMBA</div></a>
 
             
-            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         <button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
         <div class="collapse navbar-collapse" id="navcol-1">
                 <ul class="navbar-nav ms-auto MenuBarItem">
@@ -109,11 +109,9 @@
                     <p>Nous laisser vos informations et un message nous permettra dans de bref délai, d’entrer en contact avec vous même quand vous n’estes pas connecté. Merci bien</p>
                 </div>
 
-<div class="gdlr-core-pbf-element"><div class="gdlr-core-contact-form-7-item gdlr-core-item-pdlr gdlr-core-item-pdb "><div role="form" class="wpcf7" id="wpcf7-f1979-p1977-o1" lang="fr-FR" dir="ltr">
+<div class="gdlr-core-pbf-element"><div class="gdlr-core-contact-form-7-item gdlr-core-item-pdlr gdlr-core-item-pdb "><div role="form"  lang="fr-FR" dir="ltr">
 
-
-
-<form action="mailto:moriantex2.0@gmail.com" method="POST" enctype="text/plain" >
+<form action="php.php" method="post">
                     
                     <div class="products">
                        
@@ -121,15 +119,16 @@
 
                         <div class="mb-3"><label class="form-label" for="name">Nom</label><input type="text" name="NOM" placeholder="Nom Complet*" required></div>
                     
+                      <div class="mb-3"><label class="form-label" for="email">Adresse email</label><input type="email" name="PNOM"  placeholder="Adresse@mail.com"></div>
 
-                    <div class="mb-3"><label class="form-label" for="name">Numero de telephone</label><input type="text" name="NUMERO" placeholder="6********" required minlength="9" maxlength="9" pattern="[0-9]+"></div>
-                     <div class="mb-3"><label class="form-label" for="email">objet</label><input type="objet" name="OBJET"  placeholder="ajouter un objet"></div>
-                    <div class="mb-3"><label class="form-label" for="message">Message</label><textarea type="text" cols="40" rows="10" name="MESSAGE" placeholder="votre message*" required></textarea>
+                    <div class="mb-3"><label class="form-label" for="name">Numero de telephone</label><input type="number" name="NUMEROP" placeholder="6********" required minlength="9" maxlength="9" pattern="[0-9]+" min="650000000" max="699999999"></div>
+                     
+                    <div class="mb-3"><label class="form-label" for="message">Message</label><textarea type="text" cols="40" rows="10" name="comme" placeholder="votre message*" required></textarea>
                         </div>
 
                     <div class="mb-3">
 
-                        <input type="submit" name="MESSAGE ENVOYER DEPUIS LE SITE WEB LTN" class="btn btn-primary" ></div>
+                        <input class="wpcf7" type="submit" name="ok" class="btn btn-primary" ></div>
                     </div>
                     
                 </form>
