@@ -11,7 +11,7 @@
 $pdo = new PDO('mysql:host=localhost; dbname=ltn', 'root',"");
  $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
-$requete = "SELECT * FROM sms ORDER BY Nom ASC";
+$requete = "SELECT * FROM sms ORDER BY rang ASC";
 $result = $pdo->query($requete);
 if (!$result) {
    echo "echec de l'afficharge";
@@ -19,22 +19,16 @@ if (!$result) {
     $naa = $result->rowCount();}
 ?>
 
-<center><h3>tous nos message</h3></center>
-<h4>il y'a <?=$naa?> enregistrement</h4>
-<table>
+<center><h1>tous nos messages</h1></center>
+<center><h4>il y'a <?=$naa?> enregistrement</h4></center>
+<center><table border="1"> 
    
 <tr>
-
+<th>Nunero</th>
 <th>Nom complet</th>
 <th>Adresse email</th>
 <th>Numero de telephone</th>
 <th>Message</th>
-
-
-
-
-
-
 </tr>
 
 <?php 
@@ -53,7 +47,7 @@ while ($ligne= $result->fetch(PDO::FETCH_NUM)) {
 
 
 
-</table>
+</table></center>
 
 <?php
 $result->closeCursor();
